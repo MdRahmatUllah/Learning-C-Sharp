@@ -14,7 +14,7 @@ namespace HelloWorld
             string firstName = "Maruf";
             bool inWorking = false;*/
 
-            var number = 2;
+            /*var number = 2;
             var count = 10;
             var totalPrice = 20.95f; //for float f, decemal m
             var ch = 'A';
@@ -26,7 +26,12 @@ namespace HelloWorld
             Console.WriteLine(totalPrice);
             Console.WriteLine(ch);
             Console.WriteLine(firstName);
-            Console.WriteLine(inWorking);
+            Console.WriteLine(inWorking);*/
+
+            //Console.WriteLine("{0} {1}", int.MinValue, int.MaxValue);
+
+            //const float PI = 3.14f;
+
         }
     }
 }
