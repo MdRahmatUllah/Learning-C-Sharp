@@ -6,32 +6,30 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World");
-            /*byte number = 2;
-            int count = 10;
-            float totalPrice = 20.95f; //for float f, decemal m
-            char ch = 'A';
-            string firstName = "Maruf";
-            bool inWorking = false;*/
+            /*byte b = 1;
+            int i = b;
+            Console.WriteLine(i);*/
 
-            /*var number = 2;
-            var count = 10;
-            var totalPrice = 20.95f; //for float f, decemal m
-            var ch = 'A';
-            var firstName = "Maruf";
-            var inWorking = false;
+            /*int i = 1;
+            byte b = (byte)i;
+            Console.WriteLine(b);*/
 
-            Console.WriteLine(number);
-            Console.WriteLine(count);
-            Console.WriteLine(totalPrice);
-            Console.WriteLine(ch);
-            Console.WriteLine(firstName);
-            Console.WriteLine(inWorking);*/
+            /*int i = 1000;
+            byte b = (byte)i;
+            Console.WriteLine(b);*/
 
-            //Console.WriteLine("{0} {1}", int.MinValue, int.MaxValue);
-
-            //const float PI = 3.14f;
-
+            string number = "1234";
+            try
+            {
+                int i = Convert.ToInt32(number);
+                Console.WriteLine(i);
+                byte b = Convert.ToByte(number);
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("The number could not be converted");
+            }
         }
     }
 }
