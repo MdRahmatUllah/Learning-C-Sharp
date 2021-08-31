@@ -6,30 +6,76 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            /*byte b = 1;
-            int i = b;
-            Console.WriteLine(i);*/
+            Console.WriteLine("Enter the first Number: ");
+            int number1;
+            number1 = Convert.ToInt32(Console.ReadLine());
 
-            /*int i = 1;
-            byte b = (byte)i;
-            Console.WriteLine(b);*/
+            Console.WriteLine("Enter the second Number: ");
+            int number2;
+            number2 = Convert.ToInt32(Console.ReadLine());
 
-            /*int i = 1000;
-            byte b = (byte)i;
-            Console.WriteLine(b);*/
+            int fl = 0;
 
-            string number = "1234";
+            Console.WriteLine("For Add press 1\nFor Substractions 2\nFor Division 3\n" +
+                "For Multiplications 4");
+
+            fl = Convert.ToInt32(Console.ReadLine());
+
+            Calculator myCalc = new Calculator();
+
+            if(fl == 1)
+            {
+                Console.WriteLine(number1 + " + " + number2 + " = " 
+                    + myCalc.Add(number1, number2));
+            }
+
+            if (fl == 2)
+            {
+                Console.WriteLine(number1 + " - " + number2 + " = "
+                    + myCalc.Substraction(number1, number2));
+            }
+
+            if (fl == 3)
+            {
+                Console.WriteLine(number1 + " / " + number2 + " = "
+                    + myCalc.Division(number1, number2));
+            }
+
+            if (fl == 4)
+            {
+                Console.WriteLine(number1 + " * " + number2 + " = "
+                    + myCalc.Multiplications(number1, number2));
+            }
+
+        }
+    }
+
+    public class Calculator
+    {
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+        public int Substraction(int a, int b)
+        {
+            return a - b;
+        }
+        public int Multiplications(int a, int b)
+        {
+            return a * b;
+        }
+        public int Division(int a, int b)
+        {
             try
             {
-                int i = Convert.ToInt32(number);
-                Console.WriteLine(i);
-                byte b = Convert.ToByte(number);
-                Console.WriteLine(b);
+                return a / b;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("The number could not be converted");
+                Console.WriteLine("Exception occur" + ex.Message);
             }
+
+            return 0;
         }
     }
 }
