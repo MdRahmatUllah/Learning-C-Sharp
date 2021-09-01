@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace HelloWorld
+﻿namespace HelloWorld
 {
     class Program
     {
@@ -49,81 +47,6 @@ namespace HelloWorld
                     break;
             }
             outp.printOutputString();
-        }
-    }
-
-    public class outputClass
-    {
-        public int num1;
-        public int num2;
-        public char sign;
-        public int res;
-
-        public void setValue()
-        {
-            var clc = new Calculator();
-            num1 = clc.number1;
-            num2 = clc.number2;
-            sign = clc.sign;
-            res = clc.res;
-        }
-
-        public void printOutputString()
-        {
-            setValue();
-            Console.WriteLine(num1 + " " + sign + " " + num2 + " = " + res);
-        }
-
-        public void printString(string st)
-        {
-            Console.WriteLine(st);
-        }
-    }
-
-    public class inputClass
-    {
-        public int inputInt()
-        {
-            return Convert.ToInt32(Console.ReadLine());
-        }
-    }
-
-    public class Calculator
-    {
-
-
-        public int number1;
-        public int number2;
-        public int res;
-        public char sign;
-
-        public void Add()
-        {
-            res = number1 + number2;
-            sign = '+';
-        }
-        public void Substraction()
-        {
-            res = number1 - number2;
-            sign = '-';
-        }
-        public void Multiplications()
-        {
-            res = number1 * number2;
-            sign = '*';
-        }
-        public void Division()
-        {
-            try
-            {
-                res = number1 / number2;
-                sign = '/';
-            }
-            catch (Exception ex)
-            {
-                var outp = new outputClass();
-                outp.printString("Exception occur" + ex.Message);
-            }
         }
     }
 }
