@@ -6,76 +6,124 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first Number: ");
-            int number1;
-            number1 = Convert.ToInt32(Console.ReadLine());
+            var inp = new inputClass();
+            var outp = new outputClass();
 
-            Console.WriteLine("Enter the second Number: ");
+            outp.printString("Enter the first Number: ");
+            
+            int number1;
+            number1 = inp.inputInt();
+            outp.printString("Enter the second Number: ");
+
             int number2;
-            number2 = Convert.ToInt32(Console.ReadLine());
+            number2 = inp.inputInt();
 
             int fl = 0;
 
-            Console.WriteLine("For Add press 1\nFor Substractions 2\nFor Division 3\n" +
+            outp.printString("For Add press 1\nFor Substractions 2\nFor Division 3\n" +
                 "For Multiplications 4");
 
-            fl = Convert.ToInt32(Console.ReadLine());
+            fl = inp.inputInt();
 
-            Calculator myCalc = new Calculator();
+            var myCalc = new Calculator();
 
-            if(fl == 1)
+            myCalc.number1 = number1;
+            myCalc.number2 = number2;
+
+            switch (fl)
             {
-                Console.WriteLine(number1 + " + " + number2 + " = " 
-                    + myCalc.Add(number1, number2));
+                case 1:
+                    myCalc.Add();
+                    break;
+                case 2:
+                    myCalc.Substraction();
+                    break;
+                case 3:
+                    myCalc.Multiplications();
+                    break;
+                case 4:
+                    myCalc.Division();
+                    break;
+                default:
+                    outp.printString("Invalid Input");
+                    break;
             }
+            outp.printOutputString();
+        }
+    }
 
-            if (fl == 2)
-            {
-                Console.WriteLine(number1 + " - " + number2 + " = "
-                    + myCalc.Substraction(number1, number2));
-            }
+    public class outputClass
+    {
+        public int num1;
+        public int num2;
+        public char sign;
+        public int res;
 
-            if (fl == 3)
-            {
-                Console.WriteLine(number1 + " / " + number2 + " = "
-                    + myCalc.Division(number1, number2));
-            }
+        public void setValue()
+        {
+            var clc = new Calculator();
+            num1 = clc.number1;
+            num2 = clc.number2;
+            sign = clc.sign;
+            res = clc.res;
+        }
 
-            if (fl == 4)
-            {
-                Console.WriteLine(number1 + " * " + number2 + " = "
-                    + myCalc.Multiplications(number1, number2));
-            }
+        public void printOutputString()
+        {
+            setValue();
+            Console.WriteLine(num1 + " " + sign + " " + num2 + " = " + res);
+        }
 
+        public void printString(string st)
+        {
+            Console.WriteLine(st);
+        }
+    }
+
+    public class inputClass
+    {
+        public int inputInt()
+        {
+            return Convert.ToInt32(Console.ReadLine());
         }
     }
 
     public class Calculator
     {
-        public int Add(int a, int b)
+
+
+        public int number1;
+        public int number2;
+        public int res;
+        public char sign;
+
+        public void Add()
         {
-            return a + b;
+            res = number1 + number2;
+            sign = '+';
         }
-        public int Substraction(int a, int b)
+        public void Substraction()
         {
-            return a - b;
+            res = number1 - number2;
+            sign = '-';
         }
-        public int Multiplications(int a, int b)
+        public void Multiplications()
         {
-            return a * b;
+            res = number1 * number2;
+            sign = '*';
         }
-        public int Division(int a, int b)
+        public void Division()
         {
             try
             {
-                return a / b;
+                res = number1 / number2;
+                sign = '/';
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception occur" + ex.Message);
+                var outp = new outputClass();
+                outp.printString("Exception occur" + ex.Message);
             }
-
-            return 0;
         }
     }
 }
