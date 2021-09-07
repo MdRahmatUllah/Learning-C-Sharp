@@ -21,8 +21,12 @@
             orientation.Main();*/
 
             // Speed Camera
-            var speedCamera = new SpeedCamera();
-            speedCamera.Main();
+            /*var speedCamera = new SpeedCamera();
+            speedCamera.Main();*/
+
+            // Number divisible by 3 (1 to 100)
+            var divisibleNumber = new DivisibleBy3();
+            divisibleNumber.Main();
 
         }
     }
