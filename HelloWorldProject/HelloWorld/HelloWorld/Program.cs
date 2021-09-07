@@ -33,8 +33,13 @@
             numberOrOk.Main();*/
 
             // Find factorials
-            var factorials = new Factorials();
-            factorials.Main();
+            /*var factorials = new Factorials();
+            factorials.Main();*/
+
+            // Guess the number
+            var guessTheNumber = new GuessTheNumber();
+            guessTheNumber.Main();
+
         }
     }
 }
