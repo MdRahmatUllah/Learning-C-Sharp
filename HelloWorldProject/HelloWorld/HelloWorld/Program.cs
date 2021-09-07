@@ -37,8 +37,12 @@
             factorials.Main();*/
 
             // Guess the number
-            var guessTheNumber = new GuessTheNumber();
-            guessTheNumber.Main();
+            /*var guessTheNumber = new GuessTheNumber();
+            guessTheNumber.Main();*/
+
+            // Max number from user input array
+            var maxNum = new MaxNumberFromArray();
+            maxNum.Main();
 
         }
     }
