@@ -48,6 +48,7 @@
     <Compile Include="DivisibleBy3.cs" />
     <Compile Include="inputClass.cs" />
     <Compile Include="MAX_NUMBER.cs" />
+    <Compile Include="NumberOrOk.cs" />
     <Compile Include="NumberValidation.cs" />
     <Compile Include="Orientation.cs" />
     <Compile Include="outputClass.cs" />

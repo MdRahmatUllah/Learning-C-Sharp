@@ -25,9 +25,12 @@
             speedCamera.Main();*/
 
             // Number divisible by 3 (1 to 100)
-            var divisibleNumber = new DivisibleBy3();
-            divisibleNumber.Main();
+            /*var divisibleNumber = new DivisibleBy3();
+            divisibleNumber.Main();*/
 
+            // Enter a number or ok to exit print sum
+            var numberOrOk = new NumberOrOk();
+            numberOrOk.Main();
         }
     }
 }
