@@ -17,8 +17,12 @@
             maxNumber.Max();*/
 
             // Landscape or Portrait
-            var orientation = new Orientation();
-            orientation.Main();
+            /*var orientation = new Orientation();
+            orientation.Main();*/
+
+            // Speed Camera
+            var speedCamera = new SpeedCamera();
+            speedCamera.Main();
 
         }
     }
