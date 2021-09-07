@@ -16,6 +16,9 @@
             /*var maxNumber = new MAX_NUMBER();
             maxNumber.Max();*/
 
+            // Landscape or Portrait
+            var orientation = new Orientation();
+            orientation.Main();
 
         }
     }

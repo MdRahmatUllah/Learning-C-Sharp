@@ -48,6 +48,7 @@
     <Compile Include="inputClass.cs" />
     <Compile Include="MAX_NUMBER.cs" />
     <Compile Include="NumberValidation.cs" />
+    <Compile Include="Orientation.cs" />
     <Compile Include="outputClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
