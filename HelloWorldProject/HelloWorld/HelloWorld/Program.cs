@@ -29,8 +29,12 @@
             divisibleNumber.Main();*/
 
             // Enter a number or ok to exit print sum
-            var numberOrOk = new NumberOrOk();
-            numberOrOk.Main();
+            /*var numberOrOk = new NumberOrOk();
+            numberOrOk.Main();*/
+
+            // Find factorials
+            var factorials = new Factorials();
+            factorials.Main();
         }
     }
 }

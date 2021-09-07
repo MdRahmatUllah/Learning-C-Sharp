@@ -46,6 +46,7 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="CalculatorMain.cs" />
     <Compile Include="DivisibleBy3.cs" />
+    <Compile Include="Factorials.cs" />
     <Compile Include="inputClass.cs" />
     <Compile Include="MAX_NUMBER.cs" />
     <Compile Include="NumberOrOk.cs" />
