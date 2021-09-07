@@ -1,7 +1,7 @@
-E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
-E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
-E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
 E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
 E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
-E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
-E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\bin\Debug\CSharpLearning.exe.config
+E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\bin\Debug\CSharpLearning.exe
+E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\bin\Debug\CSharpLearning.pdb
+E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\obj\Debug\CSharpLearning.exe
+E:\Self Development\C#\HelloWorldProject\HelloWorld\HelloWorld\obj\Debug\CSharpLearning.pdb

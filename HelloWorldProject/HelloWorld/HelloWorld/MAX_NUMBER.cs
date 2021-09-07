@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HelloWorld
+namespace CSharpLearning
 {
     public class MAX_NUMBER 
     {

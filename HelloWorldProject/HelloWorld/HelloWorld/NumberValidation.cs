@@ -1,7 +1,6 @@
 ﻿using System;
-using HelloWorld;
 
-namespace HelloWorld
+namespace CSharpLearning
 {
     class NumberValidation
     {

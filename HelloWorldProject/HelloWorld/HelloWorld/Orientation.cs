@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HelloWorld
+namespace CSharpLearning
 {
     class Orientation
     {
